@@ -20,10 +20,13 @@ const readMd = (templateFilepath, markdownFilepath) => {
   }
 };
 
+// the various file paths
 var filepath = path.join(path.resolve(), "src/markdown/test.md");
 var templatepath = path.join(path.resolve(), "src/templates/template.html");
 
+// this function takes in both files (template.html and the parsed markdown file and replaces the contents in the template based on the parsed md file)
 const merge = (files) => {
+  // replacing the data in the template with the parsed md file
   files.template
     .replace(/<!-- HEADER -->/, files.parsed.data.title)
     .replace(/<!-- AUTHOR -->/, files.parsed.data.author)

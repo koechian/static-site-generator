@@ -22,3 +22,10 @@ It should be able to take a folder containing Markdown (or another non-HTML mark
 5. The files are then saved in a generated dist directory and served from that directory. ✅
 
 For error page maybe one general error page an be used like in GitHub. (research on error handling using JS)
+
+## Attributions
+
+1. [Node JS Official Documentation](https://nodejs.dev/en/api/v19)
+2. [Markdown Parser](https://randyperkins2k.medium.com/writing-a-simple-markdown-parser-using-javascript-1f2e9449a558) helped me deal with the MD tags to HTML tags conversion
+3. [Regex101](https://regex101.com/) for regex testing
+4. [Markdownguide](https://www.markdownguide.org/) for markdown research

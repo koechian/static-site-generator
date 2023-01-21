@@ -2,7 +2,7 @@
 title: Lorem Ipsum
 author: Ian Koech
 date: Saturday 21st January 2023
-type: Index
+type: index
 links: null
 ---
 

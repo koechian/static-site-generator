@@ -65,4 +65,4 @@ const saveFile = (content, type) => {
 var filepath = path.join(path.resolve(), "src/markdown/test.md");
 var templatepath = path.join(path.resolve(), "src/templates/template.html");
 
-const output = mergeFiles(readFiles(templatepath, filepath));
+mergeFiles(readFiles(templatepath, filepath));

@@ -8,8 +8,9 @@ It should be able to take a folder containing Markdown (or another non-HTML mark
 1. Import the files/zip
    - Unzip
    - Read the files
-2. Read the content
+2. Read and Parse the content
    - Separate the content from headers.
+   - Regex expressions are used to parse the content markdown to HTML for consistent content decoration (i.e `#Hello World` -> `<h1> Hello World <h1/>`)
    - Headers must be used to know which page is which.
    - Headers can contain data like:
      - Date

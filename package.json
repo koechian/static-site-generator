@@ -2,10 +2,16 @@
   "name": "static-site-generator",
   "version": "1.0.0",
   "description": "A Static Site Generator that takes in markdown and converts it into a site using a premade HTML Template",
+  "type": "module",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node src/index.js"
   },
   "author": "Ian Koech",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "fs": "^0.0.1-security",
+    "gray-matter": "^4.0.3",
+    "path": "^0.12.7"
+  }
 }

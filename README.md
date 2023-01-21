@@ -5,8 +5,7 @@ It should be able to take a folder containing Markdown (or another non-HTML mark
 
 ### Solution Flow
 
-1. Import the files/zip
-   - Unzip
+1. Import the files
    - Read the files
 2. Read and Parse the content
    - Separate the content from headers.
@@ -20,6 +19,6 @@ It should be able to take a folder containing Markdown (or another non-HTML mark
      - Links to other pages
 3. Each page can be returned as an object with the metadata and content as properties
 4. The object can then be injected into a HTML template.
-5. The files are then saved and served.
+5. The files are then saved in a generated dist directory and served from that directory.
 
 For error page maybe one general error page an be used like in GitHub. (research on error handling using JS)

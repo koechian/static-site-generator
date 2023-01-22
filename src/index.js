@@ -61,8 +61,23 @@ const saveFile = (content, type) => {
   });
 };
 
-// the various file paths
-var filepath = path.join(path.resolve(), "src/markdown/test.md");
+const getFileList = () => {
+  const fileList = fs.readdirSync(path.join(path.resolve(), "markdown/"));
+  return { fileList };
+};
+
+// path to template
 var templatepath = path.join(path.resolve(), "src/templates/template.html");
 
-mergeFiles(readFiles(templatepath, filepath));
+const main = () => {
+  var files = getFileList();
+
+  files.fileList.forEach((filepath) => {
+    mergeFiles(
+      readFiles(templatepath, path.join(path.resolve(), "/markdown/", filepath))
+    );
+    console.log("🤘 " + filepath + " has been converted to HTML");
+  });
+};
+
+main();

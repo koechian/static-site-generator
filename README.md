@@ -23,7 +23,9 @@ It should be able to take a folder containing Markdown (or another non-HTML mark
 4. The object can then be injected into a HTML template. ✅
 5. The files are then saved in a generated dist directory and served from that directory. ✅
 
-For error page maybe one general error page an be used like in GitHub. (research on error handling using JS)
+- For error page maybe one general error page an be used like in GitHub. (research on error handling using JS)
+- A watcher script is used to call the builder script to rebuild the files incase of any changes
+- However, it does not monitor for change in file contents
 
 ## Attributions
 
